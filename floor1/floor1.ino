@@ -236,22 +236,25 @@ void loop() {
 
 void timerISR(){
   if (vibecount != 0) {
-  vibecount = 0;
-  if(warning >= 5)
-  earthquakeflag = true;
-  if(warning > 50){
-    warning = 10;
-  }
-  warning++;
-  peaceful = 0;
-  } else {
-  if(peaceful >= 5)
-  earthquakeflag = false;
-  if(peaceful > 50){
+    vibecount = 0;
+    if(warning >= 5){
+      earthquakeflag = true;
+    }
+    if(warning > 50){
+      warning = 10;
+    }
+    warning++;
     peaceful = 0;
-  }
-  warning = 0;
-  peaceful++;
+  } 
+  else {
+    if(peaceful >= 5){
+      earthquakeflag = false;
+    }
+    if(peaceful > 50){
+      peaceful = 0;
+    }
+    warning = 0;
+    peaceful++;
   }
 }
 void vibecountVib() {
