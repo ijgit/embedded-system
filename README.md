@@ -1,10 +1,5 @@
 # embedded-system
 
-2018-12-06 (Embedded system term project)
-|팀장|팀원|
-|---|----|
-|정이수|김남호, 조의연, 성승우|
-
 
 ## master
 - floor1, floor2, front-door 와의 통신기능
